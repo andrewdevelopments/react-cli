@@ -13,9 +13,8 @@ mkdir -p "${path}/${serviceName}"
 echo "export interface I${serviceName}Service {}" > "${path}/${serviceName}/$service_lowercase.interface.ts"
 
 echo "import { I${serviceName}Service } from \"./$service_lowercase.interface\";
-import { BaseService } from \"@Services/Base/base.service\";
 
-export class ${serviceName}Service extends BaseService implements I${serviceName}Service {}" > "${path}/${serviceName}/$service_lowercase.service.ts"
+export class ${serviceName}Service implements I${serviceName}Service {}" > "${path}/${serviceName}/$service_lowercase.service.ts"
 
 # Create DTO
 read -p $'\e[0;35m Create DTO ? (y/n): \e[0m' createDTO
