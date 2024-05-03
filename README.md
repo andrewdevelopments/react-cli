@@ -9,3 +9,4 @@ Generate components, providers, and views consistently, promoting smoother colla
 ## How to use
 1. Copy `generate` folder in your root folder.
 2. Add generate script command in your `package.json`
+3. Use `yarn generate` or `npm run generate`
